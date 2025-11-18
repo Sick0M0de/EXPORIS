@@ -1,0 +1,7 @@
+{
+  "name": "Exporizz",
+  "description": "A no-code AI-powered export intelligence platform designed to help MSMEs, new manufacturers, exporters, and logistics companies discover global export opportunities with ease.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

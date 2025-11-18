@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exporizz - AI Powered Export Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-teal': '#00F5D4',
+              'brand-purple': '#9B5DE5',
+              'brand-dark': '#121212',
+              'brand-gray': {
+                100: '#F8F9FA',
+                200: '#E9ECEF',
+                300: '#DEE2E6',
+                400: '#CED4DA',
+                500: '#ADB5BD',
+                600: '#6C757D',
+                700: '#495057',
+                800: '#343A40',
+                900: '#212529',
+              },
+            },
+            animation: {
+              'spin-slow': 'spin 25s linear infinite',
+              'pulse-glow': 'pulse-glow 4s ease-in-out infinite',
+              'slide-up': 'slide-up 0.5s ease-out forwards',
+              'fade-in': 'fade-in 0.5s ease-in forwards',
+            },
+            keyframes: {
+              'pulse-glow': {
+                '0%, 100%': { boxShadow: '0 0 15px rgba(155, 93, 229, 0.4), 0 0 5px rgba(0, 245, 212, 0.3)' },
+                '50%': { boxShadow: '0 0 30px rgba(155, 93, 229, 0.7), 0 0 10px rgba(0, 245, 212, 0.5)' },
+              },
+              'slide-up': {
+                'from': { opacity: 0, transform: 'translateY(20px)' },
+                'to': { opacity: 1, transform: 'translateY(0)' },
+              },
+               'fade-in': {
+                'from': { opacity: 0 },
+                'to': { opacity: 1 },
+              },
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "three": "https://esm.sh/three@0.164.1",
+    "gsap": "https://esm.sh/gsap@3.12.5",
+    "gsap/ScrollTrigger": "https://esm.sh/gsap/ScrollTrigger",
+    "gsap/": "https://aistudiocdn.com/gsap@^3.13.0/"
+  }
+}
+</script>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white dark:bg-brand-dark transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
